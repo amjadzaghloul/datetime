@@ -1,7 +1,10 @@
 import datetime
-year = datetime.date.today().year
-month = datetime.date.today().month
-day = datetime.date.today().day
-date1 = datetime.date(int(raw_input("Enter your year")),int(raw_input("Enter your month")),int(raw_input("Enter your day")))
-date2 = datetime.date(year,month,day)
-print date2 - date1
+def daysBetweenDates():
+    year = datetime.date.today().year
+    month = datetime.date.today().month
+    day = datetime.date.today().day
+    date1 = datetime.date(int(raw_input("Enter your year")),int(raw_input("Enter your month")),int(raw_input("Enter your day")))
+    date2 = datetime.date(year,month,day)
+    print date2 - date1
+
+daysBetweenDates()
